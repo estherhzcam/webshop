@@ -1,0 +1,46 @@
+ul {
+   list-style-type: none;
+ }
+
+nav {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 5% 5% 5%;
+}
+
+#logo-header {
+width: 30vw;
+height: 10vw;
+background-image: url("/img/logo-black.svg");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+visibility: visible;
+align-items: flex-start;
+}
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    padding: 5% 10% 5% 10%;
+    background-color:beige;
+}
+img {
+    max-width: 100%;
+    min-width: 30%;
+}
+
+
+h1 {
+    font-family:'Times New Roman', Times, serif ;
+}
