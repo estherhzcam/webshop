@@ -14,7 +14,7 @@ header {
    grid-template-areas: 
    "h h h"
    "c p s";
-   grid-gap: 5vh;
+   grid-gap: 1vh;
   justify-items: center;
 }
 
@@ -25,14 +25,15 @@ nav {
 
 #logo-header {
 grid-area: h;
-width: 50vw;
-height: 15vh;
+width: 30vw;
+height: 7vh;
 background-image: url("/img/logo-black.svg");
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
 align-items: flex-start;
 }
+
 main {
     margin-left: 10%;
     margin-right: 10%;
@@ -40,7 +41,7 @@ main {
 
 footer {
     padding: 5% 10% 5% 10%;
-    background-color:beige;
+    background-color:lightgray;
 }
 img {
     max-width: 100%;
@@ -58,11 +59,11 @@ h1 {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: baseline;
-        margin: 7% 5% 5% 0%;
+        align-items: center;
+        margin: 7% 5% 0% 0%;
     }
     
-    l#logo-header {
+    #logo-header {
         width: 30vw;
         height: 30vh;
         background-image: url("/img/logo-black.svg");
