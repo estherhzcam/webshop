@@ -18,3 +18,19 @@ main {
     font-size:larger;
     font-weight:700;
 }
+
+.more-info-product {
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1px;
+}
+
+.price {
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+    
+}
