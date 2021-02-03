@@ -1,29 +1,36 @@
-ul {
-   list-style-type: none;
- }
+body {
+    display: grid;
+}
+
+header {
+    margin:0;
+}
+
+ ul {
+    display:grid;
+    list-style-type: none;
+   margin: 5% 10% 5%;
+   padding: 0;
+   grid-template-areas: 
+   "h h h"
+   "c p s";
+   grid-gap: 5vh;
+  justify-items: center;
+}
 
 nav {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
-ul {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5% 5% 5% 5%;
-}
 
 #logo-header {
-width: 30vw;
-height: 10vw;
+grid-area: h;
+width: 50vw;
+height: 15vh;
 background-image: url("/img/logo-black.svg");
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
-visibility: visible;
 align-items: flex-start;
 }
 main {
@@ -43,4 +50,27 @@ img {
 
 h1 {
     font-family:'Times New Roman', Times, serif ;
+}
+
+@media screen and (min-width:600px) {
+    ul {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 7% 5% 5% 0%;
+    }
+    
+    l#logo-header {
+        width: 30vw;
+        height: 30vh;
+        background-image: url("/img/logo-black.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        align-items: flex-start;
+        margin-right: 5%;
+        }
+    
 }
