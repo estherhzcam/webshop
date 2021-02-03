@@ -24,13 +24,26 @@ main {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:1px;
+    font-size: medium;
+    color:darkolivegreen;
+
 }
 
 .price {
     margin-top: 10px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    
+    font-weight: 600;
     
 }
+
+.discount {
+    color:crimson;
+}
+
+.soldout {
+    color:crimson;
+    font-weight: 700;
+    z-index: 3;
+}
+
