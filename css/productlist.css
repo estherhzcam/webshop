@@ -14,6 +14,11 @@ main {
     grid-template-columns: 1fr, 1fr;
 }
 
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkolivegreen;
+}
+
 .product-name {
     font-size:larger;
     font-weight:700;
@@ -41,9 +46,7 @@ main {
     color:crimson;
 }
 
-.soldout {
-    color:crimson;
-    font-weight: 700;
-    z-index: 3;
-}
 
+article.soldout {
+    opacity: 0.5;
+}

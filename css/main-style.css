@@ -1,5 +1,7 @@
 body {
     display: grid;
+    font-size: 1
+00%;
 }
 
 header {
@@ -34,6 +36,28 @@ background-position: center;
 align-items: flex-start;
 }
 
+a:link {
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+a:active {
+    text-decoration: none;
+    color:darkslategrey;
+}
+
+a:visited {
+    text-decoration: none;
+    color:lightslategrey;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+    color:lightseagreen;
+}
+
 main {
     margin-left: 10%;
     margin-right: 10%;
@@ -55,23 +79,38 @@ h1 {
 
 @media screen and (min-width:600px) {
     ul {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
         margin: 7% 5% 0% 0%;
+        display:grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
     }
     
     #logo-header {
+        grid-area:1 / 1;
         width: 30vw;
         height: 30vh;
         background-image: url("/img/logo-black.svg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
-        align-items: flex-start;
         margin-right: 5%;
         }
+
+li:nth-child(2) {
+            align-self: center;
+            grid-area: 1 / 2;            
+        };
     
 }
+li:nth-child(3) {
+    align-self: center;
+    grid-area: 1 / 
+    
+}
+
+li:nth-child(4) {
+    align-self: center;
+    grid-area: 1 / 
+    
+}
+
+
