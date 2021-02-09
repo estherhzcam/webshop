@@ -17,6 +17,8 @@ main {
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:darkolivegreen;
+    border-bottom: solid darkolivegreen;
+    border-width: 0.5px;
 }
 
 .product-name {
@@ -36,14 +38,8 @@ h1 {
 
 .price {
     margin-top: 10px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-weight: 600;
+    font-weight: 550;
     
-}
-
-.discount {
-    color:crimson;
 }
 
 
@@ -60,3 +56,36 @@ article.soldout::before {
     padding:1rem;
 
 }
+
+article .discounted, 
+article .price span {
+    display:none
+}
+
+article.onsale .discounted {
+ display: flex;
+ justify-content: space-between;
+ align-items: center ;
+ font-weight: 550;
+ margin-top: 0.1rem;
+ margin-bottom: 0.3rem;
+ padding-left: 0.5rem;
+ background-color:#E8E8E0;
+ border-radius: 5px;
+}
+
+.discounted p:first-child {
+    color: darkolivegreen;
+}
+
+.discounted p:last-child {
+    background-color: crimson;
+    color:white;
+    padding:0.3rem;
+}
+
+article.onsale .price span {
+    display:initial;
+}
+
+
