@@ -47,6 +47,16 @@ h1 {
 }
 
 
-article.soldout {
+article.soldout img {
     opacity: 0.5;
+}
+
+article.soldout::before {
+    content: "Sold out";
+    position: absolute;
+    background: black;
+    color:white;
+    font-weight: 600;
+    padding:1rem;
+
 }
