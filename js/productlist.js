@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/products?category=Accessories";
 
 fetch(url)
 .then(function(res){
@@ -24,6 +24,7 @@ function showProduct(product) {
     copy.querySelector("img").alt = product.productdisplayname;
     copy.querySelector("h2").textContent = product.productdisplayname;
     copy.querySelector(".subtitle").textContent = `${product.articletype} - ${product.brandname}`;
+    copy.querySelector("a").href = `product.html?id=${product.id}`;
     if(product.soldout) {
         copy.querySelector("article").classList.add("soldout");
     }
