@@ -10,7 +10,20 @@ nav {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
- ul {
+ul {
+    display:grid;
+    list-style-type: none;
+   margin: 5% 10% 5%;
+   padding: 0;
+   grid-template-areas: 
+   "h h h"
+   "c p s";
+   grid-gap: 1vh;
+  justify-items: center;
+}
+
+
+ /*ul {
     display:grid;
     list-style-type: none;
    margin: 5% 10% 5%;
@@ -19,19 +32,17 @@ nav {
    grid-template-rows: 70% 30%;
    grid-gap: 1vh;
   justify-items: center;
-}
+}*/
 
 
 #logo-header {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-area: h;
     width:30vw;
+    height:10vh;
     justify-self: center;
 }
 
-li:nth-child(2) {
+/*li:nth-child(2) {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -51,7 +62,7 @@ align-self:center;
 grid-column-start: 3;
 grid-row-start: 2;
  
-}
+}*/
 
 a:link {
     text-decoration: none;
