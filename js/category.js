@@ -18,11 +18,6 @@ copy.querySelector("h1").textContent = letter;
 copy.querySelector("section").id = `letter_${letter}`;
 document.querySelector(".group").appendChild(copy);
 }
-/*  <section class="letterGroup" id=letter_a>
-        <h1>A</h1>
-        <hr>
-        <ol></ol>
-    </section> */
 
 function createNavLink(letter) {
     const template = document.querySelector("#letters").content;
@@ -52,8 +47,11 @@ function showSubcat(subcat) {
     const temp = document.querySelector("#letters").content;
     const clone = temp.cloneNode(true);
     clone.querySelector("a").textContent = subcat.subcategory;
-    const parent = document.querySelector(".group");
-    parent.appendChild(clone);
+    clone.querySelector("a").href = `productlist.html?subcategory=${subcat.subcategory}`
+    const firstLetter = subcat.subcategory[0].toLowerCase();
+    const topParent = document.querySelector(`#letter_${firstLetter}`);
+    const elemParent = topParent.querySelector("ol");
+    elemParent.appendChild(clone);
 }
 
 //<div class="subcategory" id=belts><a href=""><p>Belts</p></a></div>
