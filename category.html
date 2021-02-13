@@ -12,7 +12,7 @@
     <header>
         <nav id="globalnav">
             <ul>
-                <li id=logo-header><a href="index.html"></a></li>
+                <li id=logo-header><a href="index.html"><img src="img/logo-black.svg" alt="logo Atavío. Home"></a></li>
                 <li><a href="category.html">Categories</a></li>
                 <li><a href="productlist.html">Products</a></li>
                 <li><a href="product.html">Sales</a></li>           
@@ -21,19 +21,13 @@
     </header>
     <main>
 
-        <div><h1>Accesories</h1><hr>
-            <div class="category">
-            <div class="subcategory" id=belts><p>Belts</p></div>
-            <div class="subcategory" id=eyewear><p>Eyewear</p></div>
-            <div class="subcategory" id=gloves><p>Gloves</p></div>
-            <div class="subcategory" id=scarves><p>Scarves</p></div>
-            <div class="subcategory" id=belts><p>Belts</p></div>
-            <div class="subcategory" id=eyewear><p>Eyewear</p></div>
-            <div class="subcategory" id=gloves><p>Gloves</p></div>
-            <div class="subcategory" id=scarves><p>Scarves</p></div>
+        <article>
+            <div id=letter-a></div><hr>
+        <section id=Accesories></section>
+        </article>
 
-        </div>
-        </div>
+            
+   <!---
         <div><h1>Apparel</h1><hr>
             <div class="category">
             <div class="subcategory" id=belts><p>Belts</p></div>
@@ -75,9 +69,15 @@
             <div class="subcategory" id=eyewear><p>Eyewear</p></div>
             <div class="subcategory" id=gloves><p>Gloves</p></div>
             <div class="subcategory" id=scarves><p>Scarves</p></div></div>
-        </div>
+        </div>-->
 </main>
-    <footer><p>This site has been built with an educational purpose. All the data related with the products (images, text etc) comes from <a href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a></p></footer>
+<template>
+        <div class="subcategory" id=belts><a href=""><p>Belts</p></a></div>
+</template>
+<template id="section-header">
+    <h1>Accesories</h1>
+</template>
+    <footer><p>This site has been built with an educational purpose. All the data related with the products (images, text, etc.) comes from <a href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a></p></footer>
 <script src="js/category.js"></script>
 </body>
 </html>

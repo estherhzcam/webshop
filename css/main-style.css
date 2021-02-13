@@ -1,11 +1,13 @@
 body {
     display: grid;
-    font-size: 1
-00%;
+    font-size: 100%;
 }
 
 header {
     margin:0;
+}
+nav {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
  ul {
@@ -13,27 +15,42 @@ header {
     list-style-type: none;
    margin: 5% 10% 5%;
    padding: 0;
-   grid-template-areas: 
-   "h h h"
-   "c p s";
+   grid-template-columns: 1fr;
+   grid-template-rows: 70% 30%;
    grid-gap: 1vh;
   justify-items: center;
 }
 
-nav {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 
 #logo-header {
-grid-area: h;
-width: 30vw;
-height: 7vh;
-background-image: url("/img/logo-black.svg");
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: center;
-align-items: flex-start;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width:30vw;
+    justify-self: center;
+}
+
+li:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    align-self: center;          
+}
+
+li:nth-child(3) {
+
+align-self:center;
+grid-column-start: 2;
+grid-row-start: 2;
+
+}
+
+li:nth-child(4) {
+align-self:center;
+grid-column-start: 3;
+grid-row-start: 2;
+ 
 }
 
 a:link {
@@ -81,35 +98,31 @@ h1 {
     ul {
         margin: 7% 5% 0% 0%;
         display:grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+      justify-content: baseline;
     }
     
     #logo-header {
-        grid-area:1 / 1;
-        width: 30vw;
-        height: 30vh;
-        background-image: url("/img/logo-black.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
+        grid-area:1 /1 ;
         margin-right: 5%;
+        align-self:flex-end;
         }
 
 li:nth-child(2) {
-            align-self: center;
-            grid-area: 1 / 2;            
+            align-self:flex-end;
+            grid-area: 1 ;            
         };
     
 }
 li:nth-child(3) {
-    align-self: center;
-    grid-area: 1 / 
+    align-self:flex-end;
+    grid-area: 1 
     
 }
 
 li:nth-child(4) {
-    align-self: center;
-    grid-area: 1 / 
+    align-self:flex-end;
+    grid-area: 1 / 4;
     
 }
 

@@ -1,0 +1,12 @@
+.main-img {
+    max-width: 30%;
+}
+ 
+article #products-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
+}
+
+main {
+    margin-bottom: 10vh;
+}

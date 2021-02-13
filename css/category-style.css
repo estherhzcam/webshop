@@ -6,14 +6,19 @@
     display: grid;
     background-color:lightgrey;
 }
-
 .subcategory:hover {
     background-color:lightsteelblue;
 }
 
-.category p {
-    padding-left: 2vw;
+
+article {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px 1fr));
 }
+section p{
+    padding-left: 1rem;
+}
+
 
 @media screen and (min-width:500px) {
     .category {
