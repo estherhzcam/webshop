@@ -23,6 +23,34 @@ main {
     margin-bottom: 10vh ;
 }
 
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+li a:link {
+    color: black;
+}
+li a:hover {
+    color: black;
+}
+
+.letterLinks a:link {
+    color:darkolivegreen;
+
+}
+
 @media screen and (min-width:500px) {
     .category {
         display: grid;
