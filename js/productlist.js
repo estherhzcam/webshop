@@ -1,4 +1,12 @@
-const url = "https://kea-alt-del.dk/t7/api/products?category=Accessories";
+//Const the url params
+const urlParams = new URLSearchParams(window.location.search);
+//in the URL grab the id and store its value
+const id = urlParams.get("subcategory");
+console.log(subcategory);
+
+//URL API
+const url ="https://kea-alt-del.dk/t7/api/products?subcategory=" + subcategory;
+//fetch the data
 
 fetch(url)
 .then(function(res){

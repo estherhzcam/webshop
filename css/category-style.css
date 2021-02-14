@@ -2,28 +2,20 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.subcategory {
+.letterGroup ol {
     display: grid;
     background-color:lightgrey;
+    padding:1rem;
 }
-.subcategory:hover {
+.letterGroup a:hover {
     background-color:lightsteelblue;
-}
-
-
-article {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px 1fr));
-}
-section p{
-    padding-left: 1rem;
 }
 
 main {
     margin-bottom: 10vh ;
 }
 
-ol {
+.letterLinks ol {
     list-style: none;
     display: flex;
     flex-direction: row;
