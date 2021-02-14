@@ -28,5 +28,8 @@ if(discount) {
     document.querySelector("#sale").textContent = `- ${discount}%`;
     document.querySelector(".discounted-price").textContent = `New DKK ${product.price - discounted}`;
 }
+else {
+    document.querySelector("#sale").classList.add("hidden");
+}
 }
 //populate psgr

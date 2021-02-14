@@ -10,3 +10,10 @@ article #products-display {
 main {
     margin-bottom: 10vh;
 }
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkolivegreen;
+    border-bottom: solid darkolivegreen;
+    border-width: 0.5px;
+}

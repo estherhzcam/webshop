@@ -16,6 +16,7 @@
     font-size:larger;
     font-weight:700;
     margin-top: 5vh;
+    text-transform: uppercase;
     
 }
 
@@ -68,6 +69,10 @@
     padding-top: 0.5rem;
     padding-bottom:0.5rem;
 
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 @media screen and (min-width:700px) {
