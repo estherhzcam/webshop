@@ -7,12 +7,32 @@
     background-color:lightgrey;
     padding:1rem;
 }
-.letterGroup a:hover {
-    background-color:lightsteelblue;
+
+.letterGroup h1 {
+    text-transform: uppercase;
+}
+.letterGroup li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.letterGroup li:link {
+    color: black;
+}
+.letterGroup li:hover {
+    background-color: white;
+}
+.letterGroup li:active {
+    color: darkolivegreen;
+}
+.letterGroup li:visited {
+    color: gray;
 }
 
 main {
     margin-bottom: 10vh ;
+}
+.letterLinks {
+text-transform: uppercase;
 }
 
 .letterLinks ol {

@@ -38,6 +38,21 @@
     font-weight: 700;
 }
 
+.product.soldout{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.product.soldout::before {
+    content: "Sold out";
+    position: absolute;
+    background: black;
+    color:white;
+    font-weight: 600;
+    padding:1rem;
+
+}
+
 @media screen and (min-width:700px) {
     .product {
         display:grid;
